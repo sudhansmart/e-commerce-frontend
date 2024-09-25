@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.modal-img{
+    height: 200px;
+}
+
+.product-description{
+font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.modal-price{
+    font-size: 18px;
+    color: grey;
+    text-align: start;
+}
+.product-category{
+    font-size: 16px;
+    color: darkcyan;
+    text-align: start;
+}
+
+.product-quantity{
+    font-size: 16px;
+    color: tomato;
+    text-align: start;
+}
