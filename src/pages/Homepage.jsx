@@ -2,6 +2,7 @@ import React, { useState,useRef } from 'react'
 import NavBar from '../components/NavBar'
 import HeroBanner from '../components/HeroBanner'
 import Products from '../components/Products'
+import Footer from '../components/Footer';
 
 function Homepage() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -17,9 +18,14 @@ function Homepage() {
 
   return (
     <div>
-        <NavBar ProductRef={ProductRef} scrollToSection={scrollToSection} setFilteredProducts={setFilteredProducts} setSearchTerm={setSearchTerm}/>
+        <NavBar ProductRef={ProductRef} scrollToSection={scrollToSection} 
+        setFilteredProducts={setFilteredProducts} setSearchTerm={setSearchTerm}/>
         <HeroBanner  />
-        <Products ProductRef={ProductRef} searchTerm={searchTerm} setFilteredProducts={setFilteredProducts} filteredProducts={filteredProducts} />
+        <Products ProductRef={ProductRef} searchTerm={searchTerm}
+         setFilteredProducts={setFilteredProducts} 
+         filteredProducts={filteredProducts} />
+         <Footer/>
+
     </div>
   )
 }
